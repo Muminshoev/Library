@@ -4,15 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>LIBRARY</title>
 </head>
 <body>
     <form action="#" class="form" id="form">
         <h1 class="form__title">Add book</h1>
-        <input placeholder="Book" id="title" required maxlength="100" type="text" />
-        <input placeholder="Author" id="author" required maxlength="100" type="text" />
-        <input placeholder="Pages" id="pages" required max="1000" type="number"/>
-        <input id="btn" type="submit" value="submit" />
+        <input placeholder="Book" id="title" name="title" required maxlength="100" type="text" />
+        <input placeholder="Author" id="author" name="author" required maxlength="100" type="text" />
+        <input placeholder="Pages" id="pages" name="pages" required max="1000" type="number"/>
+        <div class="form__radio-group">
+            <label for="read-yes">
+                <input type="checkbox" id="read" name="read" value="yes" >
+                Finished
+            </label>
+        </div>
+        <input id="btn" type="submit" value="Submit" />
     </form>
     <script src="./script.js"></script>
 </body>
